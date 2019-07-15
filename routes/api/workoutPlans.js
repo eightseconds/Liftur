@@ -6,7 +6,7 @@ const WorkoutPlan = require('../../models/WorkoutPlan');
 
 router.get("/test", (req, res) => res.json({ msg: "this is workout routes"}));
 
-router.post("/calibrate", 
+router.post("/create", 
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
     const { isValid, errors } = validateWorkoutPlanInput(req.body);
@@ -20,9 +20,8 @@ router.post("/calibrate",
       goal: req.goal,
       difficulty: req.difficulty
     })
-// this need to be finisehd have to work on promise!
+
     newWorkoutPlan.save()
-      // .then(plan => res.json(plan))
   }
 )
 
