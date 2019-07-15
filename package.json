@@ -23,6 +23,7 @@
     "normalize.css": "^8.0.1",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "react-modal": "^3.9.1",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
