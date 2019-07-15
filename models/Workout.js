@@ -25,12 +25,18 @@ const WorkoutSchema = new Schema({
     type: Boolean,
     required: true
   },
+  difficulties: {
+    type: Number,
+    min: 1,
+    max: 5,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now
   }
 });
 
-const Workout =mongoogse.model('workout', WorkoutSchema);
+const Workout = mongoogse.model('workout', WorkoutSchema);
 
 module.exports = Workout;
