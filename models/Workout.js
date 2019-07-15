@@ -8,14 +8,14 @@ const WorkoutSchema = new Schema({
     ref: 'users'
   },
   height: {
-    type: Number,
-    required: true
+    type: Number
   },
+  
   weight: {
     type: Number,
     min: 1,
     max: 500,
-    required: true
+    
   },
   bodytype: {
     type: Boolean,
@@ -26,7 +26,7 @@ const WorkoutSchema = new Schema({
     required: true
   },
   difficulties: {
-    type: Number,
+    type: String,
     min: 1,
     max: 5,
     required: true
@@ -37,6 +37,6 @@ const WorkoutSchema = new Schema({
   }
 });
 
-const Workout = mongoogse.model('workout', WorkoutSchema);
+const Workout = mongoose.model('workout', WorkoutSchema);
 
 module.exports = Workout;
