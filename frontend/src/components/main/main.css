@@ -1,15 +1,22 @@
 .liftur-main-div {
-    background: url('./crop.jpeg');
+    background: white;
+    display: block;
     height: 100vh;
     width: 100vh;
-    margin:0;
+    margin:0 auto;
     object-fit: cover;
+ 
 
 }
 
+.session-button {
+    outline: none;
+}
+
 .liftur-header {
-    margin: 0;
+    margin: 30px;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .session-div {
@@ -57,6 +64,18 @@
 
 }
 
+.main-info-div {
+    position: absolute;
+    top: 40%;
+    margin-left: 10px;
+    word-wrap: break-word;
+    width: 80%;
+    height: 50%;
+    font-size: 30px;
+    text-align: center;
+    left: 7%;
+}
+
 .x-button {
     float: right;
     margin-left: 85%;
@@ -75,7 +94,7 @@
 
 .session-button {
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
     margin-left: 10px;
     padding: 5px 6px;
     border-radius: 5px;
@@ -109,3 +128,20 @@ html {
 .signup-modal {
 }
 
+.black-box {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: url('./kisspng-barbell-dumbbell-fitness-centre-computer-icons-dumbbell-5abdb9dee55117.2529734415223833269393.png');
+    height: 40%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 10%;
+    /* margin: 0 auto; */
+    /* padding */
+}
+
+.barbell {
+    height: 100px;
+    width: 100px;
+}

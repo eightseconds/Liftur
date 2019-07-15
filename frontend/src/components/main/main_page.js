@@ -64,9 +64,15 @@ class MainPage extends React.Component {
                         </Modal>
                     </div>
                 </div>
-                <footer className='main-page-footer'>
+                <div className='main-info-div'>
+                    <b className='main-info'>Get a workout plan tailored to your own needs for free. Just sign up now!</b>
+                </div>
+                <div className='black-box'>
+                    {/* <img className='barbell' src=''/> */}
+                </div>
+                {/* <footer className='main-page-footer'>
                     Copyright &copy; 2019 Liftur Co.
-                </footer>
+                </footer> */}
 
             </div>
         );
