@@ -11,7 +11,7 @@ Functionality and MVP
 
 
 Technologies and Technical Challenges
-User goals and preferences will be collected via user input forms (textareas & drop-down menus). All data including user auth will be saved
+User goals and preferences will be collected via user input forms (textareas & drop-down menus). 
 Backend: MongoDB / Express
 Frontend: React / Node.js
 Technical Challenges:
