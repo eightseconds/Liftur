@@ -11,14 +11,13 @@ Functionality and MVP
 - Production README
 
 
-Technologies and Technical Challenges
+Technologies and Technical Challenges:
+
 User goals and preferences will be collected via user input forms (textareas & drop-down menus).
 
 Backend: MongoDB / Express
 
 Frontend: React / Node.js
-
-Technical Challenges:
 
 - Reading data from MongoDB database
 - Implementing different data based on comparisons made as a result of user preferences
