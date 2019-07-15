@@ -1,6 +1,7 @@
 # Liftur
 
 Background and Overview
+
 Liftur, a web application developed with the MERN stack, provides a one-stop-shop solution for all your fitness needs. With the ability to adjust routines on the fly based on fitness goals and feedback, users are ensured a workout plan tailored specifically to their needs. By providing a seamless browser experience and specialized workouts developed by fitness experts, users will no longer need to face the challenges of one size fits all workouts or spending time consulting experts, and can focus strictly on becoming a stronger version of themselves.
 
 Functionality and MVP
@@ -11,10 +12,14 @@ Functionality and MVP
 
 
 Technologies and Technical Challenges
-User goals and preferences will be collected via user input forms (textareas & drop-down menus). 
+User goals and preferences will be collected via user input forms (textareas & drop-down menus).
+
 Backend: MongoDB / Express
+
 Frontend: React / Node.js
+
 Technical Challenges:
+
 - Reading data from MongoDB database
 - Implementing different data based on comparisons made as a result of user preferences
 - Seamless UI/UX implementation via splash page, user profile, workout plan page, etc.
