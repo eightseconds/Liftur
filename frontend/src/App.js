@@ -9,12 +9,12 @@ import LoginFormContainer from './components/session/login_form_container';
 import SignupFormContainer from './components/session/signup_form_container';
 
 const App = () => (
-  <div>
+  <div className="liftur-main-ui">
     <NavBarContainer />
     <Switch>
       <ProtectedRoute path="/home" component={HomePage}/>
-      <AuthRoute path="/login" component={LoginFormContainer} />
-      <AuthRoute path="/signup" component={SignupFormContainer} />
+      {/* <AuthRoute path="/login" component={LoginFormContainer} />
+      <AuthRoute path="/signup" component={SignupFormContainer} /> */}
       <AuthRoute path="/" component={MainPage} />
     </Switch>
   </div>

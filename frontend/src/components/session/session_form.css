@@ -28,3 +28,14 @@
     border-radius: 8px;
     font-weight: bold;
 }
+
+.error-list {
+    list-style-type: none;
+    font-size: 14px;
+    color: red;
+}
+
+.error-container {
+    margin-left: 0;
+    padding: 0;
+}

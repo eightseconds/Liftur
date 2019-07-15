@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import LoginForm from '../session/login_form_container';
 import SignupForm from '../session/signup_form_container';
 import './main.css'
+import logo from './logo.png'
 
 class MainPage extends React.Component {
     constructor() {
@@ -40,8 +41,14 @@ class MainPage extends React.Component {
     render() {
         return (
             <div className='liftur-main-div'>
-                
-                <h1 className='liftur-header'>Liftur</h1>
+                <div className="splash-page--top">
+                    <div className="splash-page--header">
+                        <div className="splash--header--logo">
+                            <img src={logo} alt="Logo" className="logo" />
+                            <h1>Liftur</h1>
+                        </div>
+                    </div>
+                </div>
                 <div className='session-div'>
                     <div className='login-signup-buttons-div'>
                         <button className='session-button' onClick={this.openLoginModal}>Log In</button>
@@ -73,7 +80,6 @@ class MainPage extends React.Component {
                 {/* <footer className='main-page-footer'>
                     Copyright &copy; 2019 Liftur Co.
                 </footer> */}
-
             </div>
         );
     }
