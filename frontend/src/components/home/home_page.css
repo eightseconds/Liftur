@@ -1,0 +1,37 @@
+.liftur--ui {
+    display: block;
+    height: 100vh;
+    width: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.home-page--top {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    align-content: baseline;
+}
+
+.home-page--header {
+    display: flex;
+}
+
+.home-page--header img{
+    height: 2rem;
+    margin: 1.37em .5em 0px 1.37em;
+}
+
+.plan--wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.plan--container {
+    display: flex;
+    height: 25%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
