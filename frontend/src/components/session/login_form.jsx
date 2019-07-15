@@ -1,5 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import './session_form.css'
+
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -68,29 +70,29 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <input type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
-                        />
-                        <br />
-                        <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                        />
-                        <br />
-                        <input type="submit" value="Submit" />
+            <div className='session-form-div'>
+                <form className='session-form' onSubmit={this.handleSubmit}>  
+                    <h2>Log In</h2>              
+                    <input className='session-form-input' type="text"
+                        value={this.state.email}
+                        onChange={this.update('email')}
+                        placeholder="Email"
+                    />
+                    <input className='session-form-input' type="password"
+                        value={this.state.password}
+                        onChange={this.update('password')}
+                        placeholder="Password"
+                    />
+                    <br/>
+                    <div className='login-buttons-div'>
+                        <input className='submit-session-button' type="submit" value="Log In" />
 
-                        <button onClick={this.demoLogin} className="buttonView buttonView--default buttonView--primary buttonView--large button-submit" >
-                            <span>Demo Login</span>
+                        <button className='submit-session-button' onClick={this.demoLogin} >
+                            <span className='demo-button-text'>Demo Login</span>
                         </button>
-                        
-                        {this.renderErrors()}
                     </div>
+                    
+                    {this.renderErrors()}         
                 </form>
             </div>
         );

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import LoginForm from '../session/login_form_container';
 import SignupForm from '../session/signup_form_container';
-
+import './main.css'
 
 class MainPage extends React.Component {
     constructor() {
@@ -40,26 +40,31 @@ class MainPage extends React.Component {
     render() {
         return (
             <div className='liftur-main-div'>
-                <h1>Liftur</h1>
-                <div className='login-signup-buttons-div'>
-                    <button onClick={this.openLoginModal}>Log In</button>
-                    <button onClick={this.openSignupModal}>Sign Up</button>
+                
+                <h1 className='liftur-header'>Liftur</h1>
+                <div className='session-div'>
+                    <div className='login-signup-buttons-div'>
+                        <button className='session-button' onClick={this.openLoginModal}>Log In</button>
+                        <button className='session-button' onClick={this.openSignupModal}>Sign Up</button>
+                    </div>
+                    <div className='modal-div'>
+                        <Modal className='login-modal'
+                        isOpen={this.state.loginModalIsOpen}
+                        >
+                            <button className='x-button' onClick={this.closeLoginModal}>X</button>
+                            <LoginForm/>
+                            <button className='switch-button' onClick={this.openSignupModal}>Don't have an account? Sign Up</button>
+                        </Modal>
+                        <Modal className='signup-modal'
+                        isOpen={this.state.signupModalIsOpen}
+                        >
+                            <button className='x-button' onClick={this.closeSignupModal}>X</button>
+                            <SignupForm/>
+                            <button className='switch-button' onClick={this.openLoginModal}>Already have an account? Log In</button>
+                        </Modal>
+                    </div>
                 </div>
-                <Modal className='login-modal'
-                isOpen={this.state.loginModalIsOpen}
-                >
-                    <button onClick={this.closeLoginModal}>X</button>
-                    <LoginForm/>
-                    <button onClick={this.openSignupModal}>Don't have an account? Sign Up</button>
-                </Modal>
-                <Modal className='signup-modal'
-                isOpen={this.state.signupModalIsOpen}
-                >
-                    <button onClick={this.closeSignupModal}>X</button>
-                    <SignupForm/>
-                    <button onClick={this.openLoginModal}>Already have an account? Log in instead</button>
-                </Modal>
-                <footer>
+                <footer className='main-page-footer'>
                     Copyright &copy; 2019 Liftur Co.
                 </footer>
 
