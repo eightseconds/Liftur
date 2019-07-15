@@ -13,6 +13,8 @@ const WorkoutSchema = new Schema({
   },
   weight: {
     type: Number,
+    min: 1,
+    max: 500,
     required: true
   },
   bodytype: {
