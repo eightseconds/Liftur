@@ -1,20 +1,17 @@
 import React from 'react';
 import { AuthRoute, ProtectedRoute } from './util/route_util';
-import { Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import NavBarContainer from './components/nav/navbar_container';
-
+import CreateWorkOutContainer from './components/workoutplan/workoutplan_form_container';
 import MainPage from './components/main/main_page';
 import HomePage from './components/home/home_page_container';
-import LoginFormContainer from './components/session/login_form_container';
-import SignupFormContainer from './components/session/signup_form_container';
 
 const App = () => (
   <div className="liftur-main-ui">
     <NavBarContainer />
     <Switch>
       <ProtectedRoute path="/home" component={HomePage}/>
-      {/* <AuthRoute path="/login" component={LoginFormContainer} />
-      <AuthRoute path="/signup" component={SignupFormContainer} /> */}
+      <Route path="/create" component={CreateWorkOutContainer}/>
       <AuthRoute path="/" component={MainPage} />
     </Switch>
   </div>

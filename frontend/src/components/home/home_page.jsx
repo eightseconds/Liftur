@@ -3,6 +3,7 @@ import logo from './logo.png'
 import plus from './plus.png'
 import menu from './menu.png'
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 import './home_page.css'
 
 class HomePage extends React.Component {
@@ -83,7 +84,9 @@ class HomePage extends React.Component {
                         <div className="plan--scrollable">
                         </div>
                         <div className="plan--footer">
-                            <img src={plus} alt="Plus" className="plus" />
+                            <Link to={"/create"}>
+                                <img src={plus} alt="Plus" className="plus" />
+                            </Link>
                         </div>
                     </div>
                 </div>
