@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const createWorkoutPlan = planData => {
     return axios.post('/api/workoutPlans/create', planData)
+}
 
 export const fetchWorkoutPlan = (workoutPlanId) => {
     return axios.get(`/api/workoutPlans/${workoutPlanId}`)
