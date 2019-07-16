@@ -1,5 +1,5 @@
 .liftur-main-div {
-    background: whitesmoke;
+    background: #fff;
     display: block;
     height: 100vh;
     width: 40vh;
@@ -8,7 +8,7 @@
 }
 
 .liftur-main-ui {
-    background-color: whitesmoke;
+    background-color: #fff;
 }
 
 .liftur-header {
@@ -18,6 +18,7 @@
 }
 
 .session-div {
+    padding-top: 1.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -42,10 +43,10 @@
 }
 
 .login-modal {
-    background: whitesmoke;
+    background: #fff;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid #969696;
     border-radius: 25px;
     padding: 5px;
     outline: none;
@@ -54,8 +55,8 @@
 .signup-modal {
     display: flex;
     flex-direction: column;
-    background: whitesmoke;
-    border: 2px solid black;
+    background: #fff;
+    border: 2px solid #969696;
     border-radius: 25px;
     padding: 5px;
     outline: none;
@@ -63,11 +64,10 @@
 }
 
 .main-info-div {
-    position: absolute;
-    top: 30%;
+    padding-top: 3rem;
     word-wrap: break-word;
     max-width: 40vh;
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .switch-button {
-    background: whitesmoke;
-    border: 1px solid whitesmoke;
+    background: #fff;
+    border: 1px solid #fff;
     margin-bottom: 5px;
     color:gray;
 }
@@ -113,7 +113,6 @@ body {
     overflow-y:hidden;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 html {
@@ -156,3 +155,9 @@ html {
     margin: 2.37rem .5rem 0rem 0rem;
 }
 
+.main--footer img.model {
+    padding-top: 5rem;
+    display: flex;
+    justify-items: center;
+    width: 40vh;
+}

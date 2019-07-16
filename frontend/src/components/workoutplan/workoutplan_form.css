@@ -1,6 +1,6 @@
 .form--container {
     display: block;
-    height: 100vh;
+    height: 50vh;
 }
 
 .workspace--form {
@@ -60,4 +60,15 @@ select {
 
 .form--select {
     outline: none;
+}
+
+.form--footer {
+    display: flex;
+    justify-content: center;
+}
+
+.form--footer .form--model {
+    display: flex;
+    width: 35vh;
+    margin-right: 50px;
 }

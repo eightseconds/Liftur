@@ -1,6 +1,8 @@
 import React from 'react';
 import './workoutplan_form.css'
 import Navbar from '../nav/navbar_container';
+import formmodel from './formmodel.jpg'
+
 
 class workoutPlanForm extends React.Component {
     constructor(props) {
@@ -24,6 +26,7 @@ class workoutPlanForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.createWorkoutPlan(this.state)
+        this.props.history.push('/home')
     }
 
     render() {
@@ -52,6 +55,9 @@ class workoutPlanForm extends React.Component {
                         </div>
                         <input type="submit" value="Create Plan" className="form--button"/>
                     </form>
+                </div>
+                <div className="form--footer">
+                    <img src={formmodel} alt="form-model" className="form--model"/>
                 </div>
             </div>
         )
