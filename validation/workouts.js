@@ -4,7 +4,7 @@ module.exports = function validateWorkoutInput(data) {
     let errors = {};
 
     // data.goal = Validator.isString(data.goal) ? data.goal : '';
-    data.difficulty = Validator.isInt(data.difficulty) ? data.difficulty : '';
+    // data.difficulty = Validator.isInt(data.difficulty) ? data.difficulty : '';
     // data.exercises = Validator.isArray(data.exercises) ? data.exercises : '';
     // data.weights = Validator.isArray(data.weights) ? data.weights : '';
     
@@ -14,9 +14,9 @@ module.exports = function validateWorkoutInput(data) {
     //     errors.weight = 'Specify your goal'
     // }
 
-    if (!Validator.isInt(data.difficulty, { min: 1, max: 3 })) {
-        errors.difficulty = 'Specify Experience Level'
-    }
+    // if (!Validator.isInt(data.difficulty, { min: 1, max: 3 })) {
+    //     errors.difficulty = 'Specify Experience Level'
+    // }
 
     // if (!Validator.isArray(data.exercises)) {
     //     errors.exercises = 'Workout requires exercises'

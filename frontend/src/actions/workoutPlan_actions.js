@@ -25,5 +25,5 @@ export const fetchWorkoutPlans = id => dispatch => {
 }
 
 export const deleteWorkoutPlan = id => dispatch => {
-    APIUtil.deleteWorkoutPlan(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
+    APIUtil.deleteWorkoutPlan(id).then(workoutPlan => dispatch(removeWorkoutPlan(workoutPlan)))
 }

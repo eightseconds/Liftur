@@ -17,7 +17,7 @@ router.post("/create",
     }
 
     const newWorkoutPlan = new WorkoutPlan({
-      user: req.body.user.id,
+      user: req.body.user,
       goal: req.body.goal,
       difficulty: req.body.difficulty,
       workouts: ['hello']
@@ -34,12 +34,13 @@ router.post("/create",
   }
 )
 
-router.get('/:workoutPlan_id', (req,res)=>{
-  workout = Workout.find({id: req.params.workoutPlan_id})
-    .then(workout => workout)
+router.get('/:workoutPlanId', (req,res)=>{
+  WorkoutPlan.findById(req.params.workoutPlanId)
+    .then((workout) => res.json(workout))
+
 })
 
-router.get('/:user_id', (req, res) => {
+router.get('/users/:user_id', (req, res) => {
   workoutPlans = WorkoutPlan.find({user: req.params.user_id})
     .then(workoutPlans => workoutPlans);
 })
