@@ -16,14 +16,14 @@ export const createWorkoutPlan = planData => dispatch => {
     APIUtil.createWorkoutPlan(planData).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
 }
 
-// export const fetchWorkoutPlan = id => dispatch => {
-//     APIUtil.fetchWorkoutPlan(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
-// }
+export const fetchWorkoutPlan = id => dispatch => {
+    APIUtil.fetchWorkoutPlan(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
+}
 
-// export const fetchWorkoutPlans = id => dispatch => {
-//     APIUtil.fetchWorkoutPlans(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
-// }
+export const fetchWorkoutPlans = id => dispatch => {
+    APIUtil.fetchWorkoutPlans(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
+}
 
-// export const deleteWorkoutPlan = id => dispatch => {
-//     APIUtil.deleteWorkoutPlan(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
-// }
+export const deleteWorkoutPlan = id => dispatch => {
+    APIUtil.deleteWorkoutPlan(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
+}
