@@ -1,0 +1,1 @@
+import {RECEIVE_WORKOUT_PLAN} from '../actions/workoutPlan_actions';
