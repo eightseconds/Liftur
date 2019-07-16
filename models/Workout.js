@@ -5,12 +5,12 @@ const WorkoutSchema = new Schema({
 
     goal: {
         type: String,
-        required: true
+        // required: true
     },
 
     difficulty: {
         type: Number,
-        required: true
+        // required: true
     },
 
     exercises: {
