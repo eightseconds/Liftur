@@ -3,6 +3,7 @@ import './workoutplan_form.css'
 import Navbar from '../nav/navbar_container';
 import formmodel from './formmodel.jpg'
 
+
 class workoutPlanForm extends React.Component {
     constructor(props) {
         super(props)
