@@ -34,4 +34,18 @@ router.post("/create",
   }
 )
 
+router.get('/workoutPlans/:workout_id', (req,res)=>{
+  workout = Workout.find({id: req.params.workout_id})
+    .then(workout => workout)
+})
+
+router.get('/workoutPlans/:user_id', (req, res) => {
+  workoutPlans = WorkoutPlan.find({user: req.params.user_id})
+    .then(workoutPlans => workoutPlans);
+})
+
+router.delete('/removeWorkoutPlan/:workoutPlan_id', (req, res) => {
+  WorkoutPlan.Remove({id: req.params.workoutPlan_id})
+})
+
 module.exports = router;
