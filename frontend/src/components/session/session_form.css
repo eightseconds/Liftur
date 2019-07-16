@@ -12,22 +12,34 @@
     width: 80%;
     margin-top: 5px;
     outline: none;
+    padding: 0 0 0 10px;
 }
 
 .login-buttons-div {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
 }
 
 .submit-session-button {
-    background: black;
-    color: white;
-    border: 1px solid black;
-    padding: 10px 10px;
-    border-radius: 8px;
-    font-weight: bold;
+    display: block;
+    margin: 20px 5px 50px;
+    height: 34px;
+    width: 125px;
+    letter-spacing: 0.5px;
+    background: rgb(33, 182, 145);
+    border: 0px solid;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    font-weight: bolder;
     outline: none;
+}
+
+.submit-session-button:hover {
+    background: #05ca99;
+    cursor: pointer;
 }
 
 .error-list {
