@@ -42,7 +42,7 @@
 }
 
 .login-modal {
-    background: white;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
@@ -54,7 +54,7 @@
 .signup-modal {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: whitesmoke;
     border: 2px solid black;
     border-radius: 25px;
     padding: 5px;
@@ -81,14 +81,14 @@
 }
 
 .switch-button {
-    background: white;
-    border: 1px solid white;
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
     margin-bottom: 5px;
     color:gray;
 }
 
 .session-button {
-    background: transparent;
+    background: #fff;
     border: 2px solid black;
     margin-left: 10px;
     padding: 5px 6px;
