@@ -42,7 +42,7 @@ router.get('/:workoutPlanId', (req,res)=>{
 
 router.get('/users/:user_id', (req, res) => {
   workoutPlans = WorkoutPlan.find({user: req.params.user_id})
-    .then(workoutPlans => workoutPlans);
+    .then(workoutPlans => res.json(workoutPlans));
 })
 
 router.delete('/removeWorkoutPlan/:workoutPlan_id', (req, res) => {
