@@ -31,7 +31,7 @@ class workoutPlanForm extends React.Component {
                     <label>Goal
                         <select value={this.state.goal} onChange={this.update("goal")}>
                             <option value="aesthetic">Aesthetic</option>
-                            <option value="muscle growth">Muscle Growth</option>
+                            <option value="calisthenic">Calisthenic</option>
                             <option value="weight loss">Weight Loss</option>
                         </select>
                     </label>
