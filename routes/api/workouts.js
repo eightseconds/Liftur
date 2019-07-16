@@ -16,7 +16,9 @@ router.post('/createWorkout', (req, res) => {
         goal: req.body.goal,
         difficulty: req.body.difficulty,
         exercises: req.body.exercises,
-        weights: reqcr.body.weights
+        weights: req.body.weights,
+        sets:  req.body.sets,
+        reps: req.body.reps
     });
 
     newWorkout.save()
