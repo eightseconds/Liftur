@@ -1,18 +1,19 @@
 import { connect } from 'react-redux';
-import { createWorkoutPlan } from '../../actions/workoutPlan_actions';
-import workoutPlanForm from './workoutplan_form';
+import { fetchWorkoutPlan } from '../../actions/workoutPlan_actions';
+import workoutPlanShow from './workoutplan_show';
 
-const mapStateToProps = state => {
-    let currentUser = state.session.user
+const mapStateToProps = (state, ownProps) => {
+    let workoutPlan = state.entities.workoutPlans[ownProps.match.params.workoutPlanId]
     return {
-        currentUser,
+        workoutPlan,
+        workoutPlanId: ownProps.match.params.workoutPlanId
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        createWorkoutPlan: workoutPlan => dispatch(createWorkoutPlan(workoutPlan)),
+        fetchWorkoutPlan: (id) => dispatch(fetchWorkoutPlan(id)),
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(workoutPlanForm);
+export default connect(mapStateToProps, mapDispatchToProps)(workoutPlanShow);
