@@ -122,19 +122,6 @@ html {
 }
 
 
-.black-box {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    /* background: url('./kisspng-barbell-dumbbell-fitness-centre-computer-icons-dumbbell-5abdb9dee55117.2529734415223833269393.png'); */
-    height: 40%;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    left: 10%;
-    /* margin: 0 auto; */
-    /* padding */
-}
-
 .barbell {
     height: 100px;
     width: 100px;
