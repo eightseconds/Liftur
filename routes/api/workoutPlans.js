@@ -17,7 +17,7 @@ router.post("/create",
     }
 
     const newWorkoutPlan = new WorkoutPlan({
-      user: req.body.user.id,
+      user: req.body.user,
       goal: req.body.goal,
       difficulty: req.body.difficulty,
       workouts: ['hello']

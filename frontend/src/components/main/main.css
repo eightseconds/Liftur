@@ -88,15 +88,23 @@
 }
 
 .session-button {
-    background: #fff;
-    border: 2px solid black;
-    margin-left: 10px;
-    padding: 5px 6px;
-    border-radius: 5px;
-    font-size: 26px;
-    color: black;
-    font-weight: bold;
+    margin: 20px 10px 50px;
+    height: 34px;
+    width: 125px;
+    background: rgb(33, 182, 145);
+    border: 0px solid;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    justify-content: space-between;
     outline: none;
+    font-weight: bolder;
+}
+
+.session-button:hover {
+    background: #05ca99;
+    cursor: pointer;
 }
 
 body {

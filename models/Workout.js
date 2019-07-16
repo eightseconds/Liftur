@@ -9,7 +9,7 @@ const WorkoutSchema = new Schema({
     },
 
     difficulty: {
-        type: Number,
+        type: String,
         // required: true
     },
 
