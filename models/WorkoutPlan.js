@@ -12,12 +12,18 @@ const WorkoutPlanSchema = new Schema({
     type: String,
     required: true
   },
+
   difficulty: {
     type: Number,
     min: 1,
     max: 3,
     required: true
   },
+
+  workouts: {
+    type: Array,
+  },
+  
   date: {
     type: Date,
     default: Date.now

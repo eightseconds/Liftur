@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const db = require('./config/keys').mongoURI;
 const users = require("./routes/api/users");
+const workouts = require("./routes/api/workouts")
+const workoutPlans = require("./routes/api/workoutPlans")
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
@@ -18,6 +20,8 @@ app.get("/", (req, res) => {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use("/api/users", users);
+app.use("/api/workouts", workouts)
+app.use("/api/workoutPlans", workoutPlans)
 app.use(passport.initialize());
 require('./config/passport')(passport)
 
