@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-export const createWorkoutPlan = workoutPlan => {
-    return axios.post('/api/workoutPlans/create', workoutPlan)
+export const createWorkoutPlan = planData => {
+    return axios.post('/api/workoutPlans/create', planData)
 }

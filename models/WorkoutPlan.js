@@ -14,9 +14,7 @@ const WorkoutPlanSchema = new Schema({
   },
 
   difficulty: {
-    type: Number,
-    min: 1,
-    max: 3,
+    type: String,
     required: true
   },
 
