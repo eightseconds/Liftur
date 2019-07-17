@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../nav/navbar_container';
 import Modal from 'react-modal';
 import WorkoutShow from '../workout/workout_show';
+import './workoutplan_show.css';
 
 class WorkoutPlanShow extends React.Component {
 
@@ -80,15 +81,7 @@ class WorkoutPlanShow extends React.Component {
             <div className='workoutPlan-show-page'>
                 <Navbar/>
                 <div>
-                    {/* <ul>
-                        {this.props.workoutPlan.workouts.map(workout => {
-                            let day = this.props.workoutPlan.workouts.indexOf(workout) + 1;
-                            return(
-                            <div className='workoutShow-link-div'>                                
-                                <div >Day {day}</div>
-                            </div>)
-                        })}
-                    </ul> */}
+                    
                     <div className='buttons-div'>
                         <div className='workout-modal-button' onClick={this.openDay1Modal}>
                             Day 1
@@ -105,6 +98,9 @@ class WorkoutPlanShow extends React.Component {
                         <div className='workout-modal-button' onClick={this.openDay5Modal}>
                             Day 5
                         </div>
+                    </div>
+                    <div className='rest-instr'>
+                        Feel free to use your rest days whenever during the week... Just make sure you finish your workouts!
                     </div>
                     <Modal 
                     isOpen={this.state.day1ModalIsOpen}
