@@ -12,7 +12,9 @@ class WorkoutPlan extends React.Component {
         return(
             <div className="workout-links-container">
                 <div className="plan--container">
-                    <Link to={`/workoutPlan/${this.props.workoutPlan._id}`} className="workout-link">{this.props.workoutPlan.goal} plan</Link>
+                    <Link to={`/workoutPlan/${this.props.workoutPlan._id}`} className="workout-link">
+                        <div>{this.props.workoutPlan.goal} plan</div>
+                    </Link>
                 </div>
             </div>
         )
