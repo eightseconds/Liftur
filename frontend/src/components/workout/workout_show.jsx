@@ -12,6 +12,9 @@ class WorkoutShow extends React.Component {
                         if(exercise === 'Rest Day') {
                             return <h4 className='exercise-title'>{exercise}</h4>
                         }
+                        if(exercise === 'Rest Day - 30min Cardio') {
+                            return <h4 className='exercise-title'>{exercise}</h4>
+                        }
                         return (
                             <li>
 
