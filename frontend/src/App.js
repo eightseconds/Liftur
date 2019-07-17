@@ -11,9 +11,8 @@ const App = () => (
   <div className="liftur-main-ui">
     <Switch>
       <ProtectedRoute path="/home" component={HomePage}/>
-      <Route path="/create" component={CreateWorkOutContainer}/>
-      <Route path="/workoutPlan/:workoutPlanId" component={WorkoutPlanShow}/>
       <ProtectedRoute path="/create" component={CreateWorkOutContainer}/>
+      <ProtectedRoute path="/workoutPlan/:workoutPlanId" component={WorkoutPlanShow}/>
       <AuthRoute path="/" component={MainPage} />
     </Switch>
   </div>
