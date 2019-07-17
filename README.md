@@ -14,4 +14,5 @@ __Liftur, an introductory workout mobile web app.__
 
 * A five-day workout plan will be created for you based on your goals and experience.
 
+![UOGDlH1ULu](https://user-images.githubusercontent.com/49211034/61395869-4bf06400-a87b-11e9-9e22-b638d57c5b62.gif)
 

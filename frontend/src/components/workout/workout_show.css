@@ -13,14 +13,14 @@
 .workout-show-div {
     display: flex;
     margin:0 auto;
+    overflow-y: scroll;
 }
 
 .all-info-list {
-    height: 100%;
-    overflow-y: scroll;
     list-style: none;
     padding: 0;
     margin: 0 auto;
+    max-height: 76vh;
 }
 
 .exercise-title {
