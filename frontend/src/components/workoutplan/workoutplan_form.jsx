@@ -26,11 +26,10 @@ class workoutPlanForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.createWorkoutPlan(this.state).then(action => {
-            // debugger;
-            console.log(action)
+            
             this.props.history.push(`/workoutPlan/${action.workoutPlan.data._id}`)
         })
-        // this.props.history.push(`/home`)
+ 
     }
 
     render() {
