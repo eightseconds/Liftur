@@ -26,7 +26,7 @@ router.post("/create",
     workouts = Workout.find({difficulty: req.body.difficulty, goal: req.body.goal})
       .then(workouts => newWorkoutPlan.workouts = (workouts)).then(() => {
         newWorkoutPlan.save().then(workoutPlan => {
-          console.log(workoutPlan)
+          res.json(workoutPlan)
         })
           .catch(err => console.log(err));
       });
