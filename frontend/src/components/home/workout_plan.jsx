@@ -4,9 +4,6 @@ import './workout_plan.css'
 
 
 class WorkoutPlan extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
     render(){
         return(

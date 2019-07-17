@@ -46,7 +46,7 @@ router.get('/users/:user_id', (req, res) => {
 })
 
 router.delete('/removeWorkoutPlan/:workoutPlan_id', (req, res) => {
-  WorkoutPlan.Remove({id: req.params.workoutPlan_id})
+  WorkoutPlan.remove({id: req.params.workoutPlan_id})
 })
 
 module.exports = router;

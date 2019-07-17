@@ -13,5 +13,5 @@ export const fetchWorkoutPlans = (userId) => {
 }
 
 export const deleteWorkoutPlan = (workoutPlanId) => {
-    return axios.delete(`/api/workouts/removeWorkoutPlan/${workoutPlanId}`)
+    return axios.delete(`/api/workoutPlans/removeWorkoutPlan/${workoutPlanId}`)
 }

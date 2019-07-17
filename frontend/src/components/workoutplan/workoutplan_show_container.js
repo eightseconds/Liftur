@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchWorkoutPlan } from '../../actions/workoutPlan_actions';
+import { fetchWorkoutPlan, deleteWorkoutPlan } from '../../actions/workoutPlan_actions';
 import workoutPlanShow from './workoutplan_show';
 
 const mapStateToProps = (state, ownProps) => {
@@ -13,6 +13,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
     return {
         fetchWorkoutPlan: (id) => dispatch(fetchWorkoutPlan(id)),
+        deleteWorkoutPlan: (id) => dispatch(deleteWorkoutPlan(id))
     }
 }
 

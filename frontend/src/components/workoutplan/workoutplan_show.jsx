@@ -3,6 +3,7 @@ import Navbar from '../nav/navbar_container';
 import Modal from 'react-modal';
 import WorkoutShow from '../workout/workout_show';
 import './workoutplan_show.css';
+import { withRouter } from 'react-router-dom';
 
 class WorkoutPlanShow extends React.Component {
 
@@ -26,6 +27,7 @@ class WorkoutPlanShow extends React.Component {
         this.closeDay3Modal = this.closeDay3Modal.bind(this);
         this.closeDay4Modal = this.closeDay4Modal.bind(this);
         this.closeDay5Modal = this.closeDay5Modal.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     componentDidMount() {
@@ -74,6 +76,13 @@ class WorkoutPlanShow extends React.Component {
         this.setState({ day5ModalIsOpen: false });
     }
 
+    handleDelete() {
+        debugger
+        this.props.deleteWorkoutPlan(this.props.workoutPlanId)
+        .then((res) => console.log(res))
+        // => this.props.history.push(`/home`
+    }
+
     render() {
         if(!this.props.workoutPlan) return null;
 
@@ -81,7 +90,6 @@ class WorkoutPlanShow extends React.Component {
             <div className='workoutPlan-show-page'>
                 <Navbar/>
                 <div>
-                    
                     <div className='buttons-div'>
                         <div className='workout-modal-button' onClick={this.openDay1Modal}>
                             Day 1
@@ -102,6 +110,11 @@ class WorkoutPlanShow extends React.Component {
                     <div className='rest-instr'>
                         Feel free to use your rest days whenever during the week... Just make sure you finish your workouts!
                     </div>
+                    {/* <div onClick={this.handleDelete}>
+                        <div>
+                            Delete Work Out
+                        </div>
+                    </div> */}
                     <Modal 
                     isOpen={this.state.day1ModalIsOpen}
                     >
@@ -138,4 +151,4 @@ class WorkoutPlanShow extends React.Component {
     }
 }
 
-export default WorkoutPlanShow;
+export default withRouter(WorkoutPlanShow);

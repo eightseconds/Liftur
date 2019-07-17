@@ -6,9 +6,6 @@ import WorkoutPlan from './workout_plan';
 import './home_page.css'
 
 class HomePage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     componentDidMount(){
         this.props.fetchWorkoutPlans(this.props.currentUser.id);

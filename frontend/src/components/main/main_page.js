@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import LoginForm from '../session/login_form_container';
 import SignupForm from '../session/signup_form_container';
