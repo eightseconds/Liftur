@@ -9,7 +9,7 @@ router.get("/test", (req, res) => res.json({ msg: "this is workout routes" }));
 router.post('/createWorkout', (req, res) => {
     const { errors, isValid } = validateWorkoutInput(req.body);
     if(!isValid) {
-        eroors.name = 'didnt work'
+        errors.name = 'did not work'
         return res.status(400).json(errors)
     }
     const newWorkout = new Workout({

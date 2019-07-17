@@ -26,19 +26,6 @@
     overflow-y: scroll;
 }
 
-.plan--container {
-    display: flex;
-    height: 25%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    background-color: lavender;
-    border-radius: 20px;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-}
-
 .plan--footer {
     padding-top: 1rem;
     padding-bottom: 1rem;

@@ -9,7 +9,7 @@ export const fetchWorkoutPlan = (workoutPlanId) => {
 }
 
 export const fetchWorkoutPlans = (userId) => {
-    return axios.get(`/api/workoutPlans/${userId}`)
+    return axios.get(`/api/workoutPlans/users/${userId}`)
 }
 
 export const deleteWorkoutPlan = (workoutPlanId) => {

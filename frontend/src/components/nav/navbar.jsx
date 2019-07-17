@@ -54,18 +54,18 @@ class NavBar extends React.Component {
                                     <button onClick={this.closeModal} className='modal-close'>x</button>
                                 </div>
                                 <div>
-                                    <div className="home-page--modal--link"><Link to="/home" className="nav-homelink">Home</Link></div>
+                                    <Link to="/home" className="nav-homelink"><div className="home-page--modal--link">Home</div></Link>
                                 </div>
-                                <div className="home-page--modal--container">
-                                    <div className="home-page--modal--items">
+                                {/* <div className="home-page--modal--container"> */}
+                                    {/* <div className="home-page--modal--items">
                                         Plan 1
                                         </div>
                                     <div className="home-page--modal--items">
                                         Plan 2
                                         </div>
-                                    </div>
-                                <div className="home-page--modal--logout">
-                                    <div onClick={this.logoutUser}>Log Out</div>
+                                    </div> */}
+                                <div className="home-page--modal--logout" onClick={this.logoutUser}>
+                                    <div>Log Out</div>
                                 </div>
                             </Modal>
                         </div>

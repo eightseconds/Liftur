@@ -1,7 +1,13 @@
 import * as APIUtil from '../util/workoutPlan_api_util';
 
 export const RECEIVE_WORKOUT_PLAN = 'RECEIVE_WORKOUT_PLAN';
+export const RECEIVE_WORKOUT_PLANS = 'RECEIVE_WORKOUT_PLANS';
 export const REMOVE_WORKOUT_PLAN = 'RECEIVE_WORKOUT_PLAN';
+
+export const receiveWorkoutPlans = workoutPlans => ({
+    type: RECEIVE_WORKOUT_PLANS,
+    workoutPlans
+})
 
 export const receiveWorkoutPlan = workoutPlan => ({
     type: RECEIVE_WORKOUT_PLAN,
@@ -21,7 +27,7 @@ export const fetchWorkoutPlan = id => dispatch => {
 }
 
 export const fetchWorkoutPlans = id => dispatch => {
-    APIUtil.fetchWorkoutPlans(id).then(workoutPlan => dispatch(receiveWorkoutPlan(workoutPlan)))
+    APIUtil.fetchWorkoutPlans(id).then(workoutPlans=> dispatch(receiveWorkoutPlans(workoutPlans)))
 }
 
 export const deleteWorkoutPlan = id => dispatch => {

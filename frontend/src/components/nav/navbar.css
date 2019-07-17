@@ -42,7 +42,7 @@ img.menu{
 }
 
 .home-page--modal {
-    height: 31vh;
+    height: 17vh;
     width: 20vh;
     position: absolute;
     top: 2.8rem;
@@ -69,6 +69,7 @@ img.menu{
 .nav-homelink {
     color: black;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .home-page--modal--items {
@@ -85,7 +86,7 @@ img.menu{
     width: 100%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #969696;
+    /* border-bottom: 1px solid #969696; */
 }
 .home-page--modal--closer {
     display: flex;
@@ -99,4 +100,5 @@ img.menu{
     width: 100%;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
