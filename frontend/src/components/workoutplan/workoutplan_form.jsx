@@ -26,7 +26,8 @@ class workoutPlanForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.createWorkoutPlan(this.state)
-        this.props.history.push('/home')
+        this.props.fetchWorkoutPlans(this.props.currentUser._id)
+       this.props.history.push('/home')
     }
 
     render() {
