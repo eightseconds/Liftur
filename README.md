@@ -5,7 +5,7 @@
 ## Showcase
 
 __Liftur, an introductory workout mobile web app.__
-###### Rails backend & React/Redux frontend
+###### MongoDB, Express, React, and Node stack application.
 
 * Workout plans were designed by a personal trainer.
 * Create a new work out plan by selecting a goal and level of difficulty
