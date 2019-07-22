@@ -109,7 +109,6 @@
 body {
     margin:0;
     overflow-x:hidden;
-    overflow-y:hidden;
     position: relative;
     font-family: 'Montserrat', sans-serif;
 }
