@@ -88,16 +88,15 @@
 }
 
 .session-button {
-    margin: 20px 10px 50px;
+    margin-left: 5px;
     height: 34px;
-    width: 125px;
+    width: 100px;
     background: rgb(33, 182, 145);
     border: 0px solid;
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1.25px;
-    justify-content: space-between;
     outline: none;
     font-weight: bolder;
 }
