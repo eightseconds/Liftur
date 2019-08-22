@@ -124,25 +124,25 @@ class WorkoutPlanShow extends React.Component {
 
                     <Modal
                     isOpen={this.state.day2ModalIsOpen}>
-                        <button onClick={this.closeDay2Modal}>X</button>
+                        <button className='workout-show-close' onClick={this.closeDay2Modal}>X</button>
                         <WorkoutShow workout={this.props.workoutPlan.workouts[1]}/>
                     </Modal>
 
                     <Modal
                     isOpen={this.state.day3ModalIsOpen}>
-                        <button onClick={this.closeDay3Modal}>X</button>
+                        <button className='workout-show-close' onClick={this.closeDay3Modal}>X</button>
                         <WorkoutShow workout={this.props.workoutPlan.workouts[2]}/>
                     </Modal>
 
                     <Modal
                     isOpen={this.state.day4ModalIsOpen}>
-                        <button onClick={this.closeDay4Modal}>X</button>
+                        <button className='workout-show-close' onClick={this.closeDay4Modal}>X</button>
                         <WorkoutShow workout={this.props.workoutPlan.workouts[3]}/>
                     </Modal>
 
                     <Modal
                     isOpen={this.state.day5ModalIsOpen}>
-                        <button onClick={this.closeDay5Modal}>X</button>
+                        <button className='workout-show-close' onClick={this.closeDay5Modal}>X</button>
                         <WorkoutShow workout={this.props.workoutPlan.workouts[4]}/>
                     </Modal>
                 </div>
