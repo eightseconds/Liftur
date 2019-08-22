@@ -39,6 +39,9 @@ img.menu{
     position: absolute;
     right: 5px;
     font-size: 20px;
+    top: 5px;
+    background: white;
+    border: 1px solid white;
 }
 
 .home-page--modal {

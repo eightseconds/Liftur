@@ -24,3 +24,8 @@
     font-weight: bold;
     font-size: 18px;
 }
+
+.workout-show-close {
+    background: white;
+    border: 1px solid white;
+}
